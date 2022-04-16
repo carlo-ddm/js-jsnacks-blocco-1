@@ -10,7 +10,6 @@ let box = [];
 const limit = 6;
 let number;
 let result;
-let message;
 
 for (i = 0; i < limit; i ++){
   number = parseInt(prompt('Inserisci un numero'));
