@@ -10,17 +10,20 @@ let box = [];
 const limit = 6;
 let number;
 let result;
+let message;
 
 for (i = 0; i < limit; i ++){
-  number = prompt('Inserisci un numero');
+  number = parseInt(prompt('Inserisci un numero'));
   while (isNaN(number)){
     alert('Non hai inserito un numero.')
-    number = prompt('Inserisci un numero');
+    number = parseInt(prompt('Inserisci un numero'));
   }
   console.log(number);
   if (number % 2){
     box.push(number);
     console.log(box);
+  } else {
+    console.log('Non hai selezionato un numero dispari');
   }
 }
 result = document.getElementById('print').innerHTML = `Ecco i numeri dispari che hai selezionato: ${box}`;
@@ -31,3 +34,7 @@ result = document.getElementById('print').innerHTML = `Ecco i numeri dispari che
  Al contrario: se nego questa condizione dirò che non è vero che quella condizione non è vera (es. 8 / 2  = 4, con 0 di resto). La condizione sarà negativa ma essendo negata sarà positiva, quindi il numero 8 verrà pushato)
  */
 
+//  PROVA__
+//  (!(number % 2)){
+//   message = 'Non hai selezionato alcun numero dispari';
+//   console.log(message);
