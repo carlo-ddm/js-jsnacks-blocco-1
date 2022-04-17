@@ -8,7 +8,7 @@ console.log('test');
 let number = prompt('Inserisci un numero di almeno quattro cifre');
 ok = false;
 
-while (number < 1000 || isNaN(number)){
+while ((number < 1000 || number > 9999) || isNaN(number)){
   alert('ATTENZIONE! Inserimento invalido.');
   number = prompt('Inserisci un numero di almeno quattro cifre');
 }
